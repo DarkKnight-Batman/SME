@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Sneha Mitra Estates</title>
+<meta name="description" content="Address, phone, WhatsApp numbers and e-mail of Sneha Mitra Estates, Visakhapatnam.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="top solid" id="top">
+  <a class="logo" href="index.html" aria-label="Sneha Mitra Estates, home"><img src="assets/logo.png" alt="Sneha Mitra Estates. Where dreams come home"></a>
+  <button type="button" class="btn line menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav aria-label="Main" id="nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="locations.html">Locations</a>
+    <a href="about.html">About</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a class="btn alt" href="https://wa.me/919885136338" target="_blank" rel="noopener">WhatsApp us</a>
+  </nav>
+</header>
+
+<main>
+<section class="band first" id="contact">
+  <div class="wrap cols">
+    <div class="reach">
+      <div class="head" style="margin-bottom:0">
+        <span class="tag">Contact</span>
+        <h1>Plan a site visit</h1>
+        <p style="max-width:48ch">Call or message us and we will arrange a visit to the layout of your choice.</p>
+      </div>
+      <div>
+        <h3>Head office</h3>
+        <p>Plot No. 45, 1st Floor, Sri Shirdi Sai Veterinary Colony,<br>Visalakshi Nagar, Visakhapatnam-43.</p>
+      </div>
+      <div>
+        <h3>Call</h3>
+        <ul class="nums"><li><a href="tel:+919885136338">98851 36338</a></li></ul>
+      </div>
+      <div>
+        <h3>WhatsApp</h3>
+        <ul class="nums">
+          <li><a href="https://wa.me/919542862799" target="_blank" rel="noopener">95428 62799</a></li>
+          <li><a href="https://wa.me/919885136338" target="_blank" rel="noopener">98851 36338</a></li>
+          <li><a href="https://wa.me/919676166266" target="_blank" rel="noopener">96761 66266</a></li>
+          <li><a href="https://wa.me/919246341777" target="_blank" rel="noopener">92463 41777</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>E-mail</h3>
+        <ul class="nums"><li><a href="mailto:snehamitraestates@gmail.com">snehamitraestates@gmail.com</a></li></ul>
+      </div>
+    </div>
+
+    <form class="enq" id="enq" novalidate>
+      <h3>Send an enquiry on WhatsApp</h3>
+      <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" required></label>
+      <label for="f-phone">Phone number<input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+      <label for="f-proj">Interested in
+        <select id="f-proj" name="project">
+          <option>Vishnu Soudha, villas</option>
+          <option>Vishnu Soudha, open plots</option>
+          <option>Harmony Homes, plots</option>
+          <option>Other projects</option>
+        </select>
+      </label>
+      <label for="f-msg">Message<textarea id="f-msg" name="msg" rows="3" placeholder="Preferred facing, plot size, visit date"></textarea></label>
+      <a class="btn" id="f-send" href="https://wa.me/919885136338" target="_blank" rel="noopener">Open WhatsApp with this message</a>
+      <small>This opens WhatsApp with your details filled in. Nothing is sent until you press send there.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo.png" alt="Sneha Mitra Estates">
+  <span>Plot No. 45, 1st Floor, Sri Shirdi Sai Veterinary Colony, Visalakshi Nagar, Visakhapatnam-43</span>
+  <span>snehamitraestates@gmail.com</span>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav>
+</footer>
+
+<dialog class="zoom" id="zoom" aria-label="Enlarged image">
+  <div class="scroll"><img alt=""></div>
+  <button type="button" class="btn alt" id="zoom-x">Close</button>
+</dialog>
+
+<script src="site.js"></script>
+</body>
+</html>
