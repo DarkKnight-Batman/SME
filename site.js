@@ -57,3 +57,37 @@ wa(document.getElementById("job"), document.getElementById("j-send"), function(v
     (v("exp") ? "\nExperience: " + v("exp") : "") + (v("msg") ? "\n" + v("msg") : "");
 });
 })();
+
+/* floating buttons: back to top, and step aside while the 3D walkthrough is on screen */
+(function(){
+  var tt = document.getElementById("to-top"), tour = document.getElementById("tour");
+  if (!tt) return;
+  tt.addEventListener("click", function(){ scrollTo({ top: 0, behavior: "smooth" }); });
+  function upd(){
+    var inTour = tour && tour.getBoundingClientRect().bottom > innerHeight * 0.5;
+    document.body.classList.toggle("in-tour", !!inTour);
+    tt.classList.toggle("show", scrollY > 500);
+  }
+  addEventListener("scroll", upd, { passive: true }); upd();
+})();
+
+/* header brochure menu, and the Ongoing / Completed / Upcoming filter on the Projects page */
+(function(){
+  var bro = document.querySelector(".dd.bro > a");
+  if (bro) {
+    bro.addEventListener("click", function(e){ e.preventDefault(); bro.parentNode.classList.toggle("open"); });
+    document.addEventListener("click", function(e){ if (!bro.parentNode.contains(e.target)) bro.parentNode.classList.remove("open"); });
+  }
+  var f = document.querySelector(".filters");
+  if (!f) return;
+  var cards = [].slice.call(document.querySelectorAll(".posters .poster")), empty = document.getElementById("no-projects");
+  function apply(){
+    var s = (location.hash || "").slice(1);
+    if (["ongoing", "completed", "upcoming"].indexOf(s) < 0) s = "all";
+    var n = 0;
+    cards.forEach(function(c){ var ok = s === "all" || c.dataset.status === s; c.hidden = !ok; if (ok) n++; });
+    empty.hidden = n > 0;
+    f.querySelectorAll("a").forEach(function(a){ a.classList.toggle("on", a.getAttribute("href").split("#")[1] === s); });
+  }
+  addEventListener("hashchange", apply); apply();
+})();

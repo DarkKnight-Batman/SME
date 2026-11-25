@@ -18,12 +18,13 @@
   <button type="button" class="btn line menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav aria-label="Main" id="nav">
     <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
+    <div class="dd"><a href="projects.html">Projects</a><div class="sub"><a href="projects.html#ongoing">Ongoing projects</a><a href="projects.html#completed">Completed projects</a><a href="projects.html#upcoming">Upcoming projects</a><a href="projects.html#all">All projects</a></div></div>
+    <div class="dd"><a href="gallery.html">Gallery</a><div class="sub"><a href="gallery.html#photos">Photo Gallery</a><a href="gallery.html#videos">Video Gallery</a><a href="gallery.html#media">Media Gallery</a></div></div>
     <a href="locations.html">Locations</a>
     <a href="about.html">About</a>
     <a href="careers.html">Careers</a>
     <a href="contact.html" aria-current="page">Contact</a>
-    <a class="btn alt" href="https://wa.me/919885136338" target="_blank" rel="noopener">WhatsApp us</a>
+    <div class="dd bro"><a class="btn alt" href="projects.html" aria-haspopup="true">Brochure</a><div class="sub"><a href="downloads/vishnu-soudha-brochure.pdf" download data-view="assets/vs-brochure.jpg">Vishnu Soudha brochure</a><a href="downloads/harmony-homes-brochure.pdf" download data-view="assets/hh-brochure.jpg">Harmony Homes brochure</a></div></div>
   </nav>
 </header>
 
@@ -83,8 +84,15 @@
   <img src="assets/logo.png" alt="Sneha Mitra Estates">
   <span>Plot No. 45, 1st Floor, Sri Shirdi Sai Veterinary Colony, Visalakshi Nagar, Visakhapatnam-43</span>
   <span>snehamitraestates@gmail.com</span>
-  <nav aria-label="Footer"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="locations.html">Locations</a><a href="about.html">About</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav>
 </footer>
+
+<div class="floats">
+  <a class="fab wa" href="https://wa.me/919885136338" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.1A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></a>
+  <a class="fab call" href="tel:+919885136338" aria-label="Call us"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg></a>
+  <a class="enq-tab" href="contact.html#enq">Enquire now</a>
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m0 0l-6 6m6-6l6 6"/></svg></button>
+</div>
 
 <dialog class="zoom" id="zoom" aria-label="Enlarged image">
   <div class="scroll"><img alt=""></div>
